@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
-import { AgmCoreModule } from 'angular2-google-maps/core';
+import { AgmCoreModule } from 'angular2-google-maps/esm/core/index.js';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -12,9 +12,7 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     IonicModule.forRoot(MyApp),
-    AgmCoreModule.forRoot({
-      apiKey: 'YOUR_API_KEY'
-    })
+    AgmCoreModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
